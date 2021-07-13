@@ -43,7 +43,7 @@ namespace server
             var result = mongoCollection.Find(filter).FirstOrDefault();
 
             if (result == null)
-                throw new RpcException(new Status(StatusCode.NotFound, "The blog id " + blogId + " wasn't find"));
+                throw new RpcException(new Status(StatusCode.NotFound, "The blog id " + blogId + " couldn't be found"));
 
             Blog.Blog blog = new Blog.Blog()
             {

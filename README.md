@@ -1,4 +1,4 @@
-# Evanse CLI:
+# Evans CLI:
 
 - show package
 - show message
